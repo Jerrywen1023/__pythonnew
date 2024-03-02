@@ -28,4 +28,58 @@ FROM student;
 SELECT *
 FROM student
 ORDER BY score
+LIMIT 3;
+
+SELECT *
+FROM student
+WHERE major = '英語'
+ORDER BY score DESC
 LIMIT 1;
+
+SELECT *
+FROM student
+WHERE major = '英語' AND score < 60
+
+SELECT *
+FROM student
+WHERE major = '英語' or score > 60
+
+SELECT *
+FROM student
+WHERE major = '英語' or score > 60 or major = '生物'
+
+SELECT *
+FROM student
+WHERE major IN ('英語','生物','歷史')
+
+SELECT *
+FROM student
+WHERE SCORE >= 80 AND score <= 100;
+
+SELECT *
+FROM student
+WHERE SCORE BETWEEN 80 AND 100;
+
+SELECT *
+FROM student
+WHERE NOT name ='小藍'
+
+SELECT *
+FROM student
+WHERE name like'小%'
+
+SELECT *
+FROM student
+WHERE name like'%黑%'
+
+
+
+
+
+
+
+
+
+
+
+
