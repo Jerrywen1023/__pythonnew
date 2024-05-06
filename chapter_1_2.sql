@@ -17,7 +17,21 @@ VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30', 36200),
 	   
 SELECT * FROM teachers
 
-SELECT last_name, first_name, salary FROM teachers;
-
-SELECT DISTINCT school
+SELECT last_name, first_name, salary 
 FROM teachers;
+
+SELECT school, salary
+FROM teachers;
+
+SELECT DISTINCT school, salary
+FROM teachers;
+
+SELECT last_name, school, hire_date
+FROM teachers
+ORDER BY school ASC, hire_date DESC;
+
+SELECT last_name, school, hire_date
+FROM teachers
+WHERE school = 'Myers Middle School';
+
+
