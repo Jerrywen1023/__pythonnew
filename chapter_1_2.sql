@@ -19,3 +19,5 @@ SELECT * FROM teachers
 
 SELECT last_name, first_name, salary FROM teachers;
 
+SELECT DISTINCT school
+FROM teachers;
